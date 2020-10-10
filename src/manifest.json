@@ -28,7 +28,7 @@
         "https://*.twitter.com/*/tos"
       ],
       "css": [],
-      "js": ["vendor/browser-polyfill.min.js", "scripts/script.js"]
+      "js": ["scripts/script.js"]
     }
   ]
 }
