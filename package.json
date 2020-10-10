@@ -1,0 +1,26 @@
+{
+  "name": "returnretweet",
+  "version": "0.0.0",
+  "description": "리트윗을 되살리는 확장기능",
+  "main": "src/manifest.json",
+  "repository": "https://github.com/gaeulbyul/ReturnRetweet",
+  "author": "Gaeulbyul <aeiou256@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn just default"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "just-scripts": "^1.2.0",
+    "mkdirp": "^1.0.4",
+    "ncp": "^2.0.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2",
+    "rimraf": "^3.0.2"
+  }
+}
