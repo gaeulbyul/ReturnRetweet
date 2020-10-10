@@ -30,9 +30,4 @@ task('zip', async () => {
   await exec(`7z a -r dist/${filename} build/.`)
 })
 
-task('srczip', async () => {
-  await mkdirp('dist/')
-  await exec(`git archive -9 -v -o ./dist/${name}-v${version}.Source.zip HEAD`)
-})
-
-task('default', parallel(series('clean', 'build', 'zip'), 'srczip'))
+task('default', series('clean', 'build', 'zip'))
